@@ -1,0 +1,124 @@
+{
+  "friends": [
+    {
+      "id": 1,
+      "name": "Sarah Chen",
+      "picture": "https://i.pravatar.cc/150?img=5",
+      "email": "sarah.chen@email.com",
+      "days_since_contact": 12,
+      "status": "almost due",
+      "tags": ["college", "hiking", "close friend"],
+      "bio": "Met during freshman orientation at UC Berkeley. We bond over trail runs in the Bay Area and late-night study sessions that turned into lifelong friendship.",
+      "goal": 14,
+      "next_due_date": "2025-07-22"
+    },
+    {
+      "id": 2,
+      "name": "Marcus Johnson",
+      "picture": "https://i.pravatar.cc/150?img=12",
+      "email": "m.johnson@workmail.com",
+      "days_since_contact": 45,
+      "status": "overdue",
+      "tags": ["work", "coffee", "mentor"],
+      "bio": "Senior product manager who took me under his wing when I joined the team. Always has great career advice and knows the best espresso spots downtown.",
+      "goal": 30,
+      "next_due_date": "2025-07-10"
+    },
+    {
+      "id": 3,
+      "name": "Elena Rodriguez",
+      "picture": "https://i.pravatar.cc/150?img=23",
+      "email": "elena.r@globalmail.es",
+      "days_since_contact": 5,
+      "status": "on-track",
+      "tags": ["childhood", "family friend", "travel"],
+      "bio": "Grew up next door to each other in Miami. Now she's teaching English in Barcelona, but we still video call every Sunday to catch up on life.",
+      "goal": 30,
+      "next_due_date": "2025-08-15"
+    },
+    {
+      "id": 4,
+      "name": "David Kim",
+      "picture": "https://i.pravatar.cc/150?img=33",
+      "email": "davidkim.fitness@email.com",
+      "days_since_contact": 7,
+      "status": "almost due",
+      "tags": ["gym", "tech", "accountability"],
+      "bio": "Met at a CrossFit box two years ago. We push each other during workouts and debate the latest AI developments over post-gym smoothies.",
+      "goal": 7,
+      "next_due_date": "2025-07-18"
+    },
+    {
+      "id": 5,
+      "name": "Priya Patel",
+      "picture": "https://i.pravatar.cc/150?img=44",
+      "email": "priya.reads@email.com",
+      "days_since_contact": 2,
+      "status": "on-track",
+      "tags": ["book club", "photography", "creative"],
+      "bio": "Found each other through a local mystery novel club. She's an incredible photographer who taught me to see beauty in everyday moments.",
+      "goal": 14,
+      "next_due_date": "2025-07-28"
+    },
+    {
+      "id": 6,
+      "name": "Alex Thompson",
+      "picture": "https://i.pravatar.cc/150?img=52",
+      "email": "alex.t.neighbor@email.com",
+      "days_since_contact": 21,
+      "status": "overdue",
+      "tags": ["neighbor", "dogs", "community"],
+      "bio": "Lives two doors down with the friendest golden retriever. We coordinate dog park visits and neighborhood watch duties. Need to reconnect soon!",
+      "goal": 14,
+      "next_due_date": "2025-07-05"
+    },
+    {
+      "id": 7,
+      "name": "Jamal Williams",
+      "picture": "https://i.pravatar.cc/150?img=68",
+      "email": "jamal.music@email.com",
+      "days_since_contact": 10,
+      "status": "on-track",
+      "tags": ["college roommate", "music", "creative"],
+      "bio": "My college roommate who turned our dorm room into a makeshift recording studio. Now he's producing indie artists, and I'm his biggest fan.",
+      "goal": 14,
+      "next_due_date": "2025-07-25"
+    },
+    {
+      "id": 8,
+      "name": "Sophie Martin",
+      "picture": "https://i.pravatar.cc/150?img=77",
+      "email": "sophie.wanderlust@email.fr",
+      "days_since_contact": 28,
+      "status": "almost due",
+      "tags": ["travel buddy", "foodie", "adventure"],
+      "bio": "Met while backpacking through Southeast Asia. We've explored 12 countries together and still plan our next adventure over shared Google Docs.",
+      "goal": 30,
+      "next_due_date": "2025-07-21"
+    },
+    {
+      "id": 9,
+      "name": "Ryan O'Connor",
+      "picture": "https://i.pravatar.cc/150?img=85",
+      "email": "ryan.gamer@email.com",
+      "days_since_contact": 3,
+      "status": "on-track",
+      "tags": ["high school", "gaming", "nostalgia"],
+      "bio": "Been friends since 10th grade chemistry lab. Still team up for weekend gaming sessions and never let me forget that time I set the Bunsen burner too high.",
+      "goal": 7,
+      "next_due_date": "2025-07-19"
+    },
+    {
+      "id": 10,
+      "name": "Aisha Okonkwo",
+      "picture": "https://i.pravatar.cc/150?img=92",
+      "email": "aisha.okonkwo@professional.com",
+      "days_since_contact": 35,
+      "status": "overdue",
+      "tags": ["mentor", "career", "leadership"],
+      "bio": "Former director who became my career mentor. Her guidance helped me navigate my first promotion. I owe her a thoughtful check-in and coffee date.",
+      "goal": 30,
+      "next_due_date": "2025-07-08"
+    }
+  ]
+}
