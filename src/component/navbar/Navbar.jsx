@@ -1,45 +1,31 @@
-// components/Navbar.jsx
+"use client";
 import { GoHome } from "react-icons/go";
 import { MdOutlineTimeline } from "react-icons/md";
 import { TbChartLine } from "react-icons/tb";
-import Link from "next/link";
+import Links from "./Links";
+
+const navLinks = [
+  { href: "/", label: "Home", Icon: GoHome },
+  { href: "/timeline", label: "Timeline", Icon: MdOutlineTimeline },
+  { href: "/stats", label: "Stats", Icon: TbChartLine },
+];
 
 export default function Navbar() {
   return (
-    <nav className="w-full flex items-center justify-between px-6 py-3 border-b border-gray-200 bg-white">
-      <div>
-        <span className="font-extrabold text-gray-900 text-2xl tracking-tight">
+    <nav className="w-full flex items-center justify-between px-4 py-3 border-b border-gray-200 bg-white sm:px-6">
+      <div className="shrink-0">
+        <span className="font-extrabold text-gray-900 text-xl tracking-tight sm:text-2xl">
           Keen
         </span>
-        <span className="font-bold text-gray-900 text-2xl tracking-tight">
+        <span className="font-bold text-gray-900 text-xl tracking-tight sm:text-2xl">
           Keeper
         </span>
       </div>
 
       <div className="flex items-center gap-1">
-        <Link
-          href="/"
-          className="flex items-center gap-2 bg-[#1a3a2f] text-white px-4 py-2 rounded-lg text-sm font-medium"
-        >
-          <GoHome size={16} />
-          Home
-        </Link>
-
-        <Link
-          href="/timeline"
-          className="flex items-center gap-2 text-gray-600 hover:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-        >
-          <MdOutlineTimeline size={16} />
-          Timeline
-        </Link>
-
-        <Link
-          href="/stats"
-          className="flex items-center gap-2 text-gray-600 hover:text-gray-900 px-4 py-2 rounded-lg text-sm font-medium transition-colors"
-        >
-          <TbChartLine size={16} />
-          Stats
-        </Link>
+        {navLinks.map((link) => (
+          <Links key={link.href} {...link} />
+        ))}
       </div>
     </nav>
   );
