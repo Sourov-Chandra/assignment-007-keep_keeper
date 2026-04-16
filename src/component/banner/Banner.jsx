@@ -1,12 +1,9 @@
-import path from "path";
-import { promises as fs } from "fs";
+"use client"
 import { FaPlus } from "react-icons/fa";
+import useFriends from "@/app/hooks/useFriends";
 
-const Banner = async () => {
-  const filePath = path.join(process.cwd(), "public", "friends.json");
-  const fileContent = await fs.readFile(filePath, "utf-8");
-  const data = JSON.parse(fileContent);
-  const friends = data.friends;
+const Banner = () => {
+  const { friends } = useFriends();
 
   const total = friends.length;
   const onTrack = friends.filter((f) => f.status === "on-track").length;

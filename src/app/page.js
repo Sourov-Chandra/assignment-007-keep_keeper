@@ -4,8 +4,10 @@ import FriendsPage from "@/component/friends/Friends";
 export default function Home() {
   return (
     <div>
-      <Banner />
-      <FriendsPage />
+      <div>
+        <Banner />
+        <FriendsPage />
+      </div>
     </div>
   );
 }

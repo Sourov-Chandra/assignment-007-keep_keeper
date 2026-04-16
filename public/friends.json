@@ -31,7 +31,7 @@
       "email": "elena.r@globalmail.es",
       "days_since_contact": 5,
       "status": "on-track",
-      "tags": ["childhood", "family friend", "travel"],
+      "tags": ["childhood", "friend", "travel"],
       "bio": "Grew up next door to each other in Miami. Now she's teaching English in Barcelona, but we still video call every Sunday to catch up on life.",
       "goal": 30,
       "next_due_date": "2025-08-15"
@@ -79,7 +79,7 @@
       "email": "jamal.music@email.com",
       "days_since_contact": 10,
       "status": "on-track",
-      "tags": ["college roommate", "music", "creative"],
+      "tags": ["roommate", "music", "creative"],
       "bio": "My college roommate who turned our dorm room into a makeshift recording studio. Now he's producing indie artists, and I'm his biggest fan.",
       "goal": 14,
       "next_due_date": "2025-07-25"
@@ -87,7 +87,7 @@
     {
       "id": 8,
       "name": "Sophie Martin",
-      "picture": "https://i.pravatar.cc/150?img=77",
+      "picture": "https://i.pravatar.cc/150?img=55",
       "email": "sophie.wanderlust@email.fr",
       "days_since_contact": 28,
       "status": "almost due",
@@ -99,7 +99,7 @@
     {
       "id": 9,
       "name": "Ryan O'Connor",
-      "picture": "https://i.pravatar.cc/150?img=85",
+      "picture": "https://i.pravatar.cc/150?img=56",
       "email": "ryan.gamer@email.com",
       "days_since_contact": 3,
       "status": "on-track",
@@ -111,7 +111,7 @@
     {
       "id": 10,
       "name": "Aisha Okonkwo",
-      "picture": "https://i.pravatar.cc/150?img=92",
+      "picture": "https://i.pravatar.cc/150?img=29",
       "email": "aisha.okonkwo@professional.com",
       "days_since_contact": 35,
       "status": "overdue",
