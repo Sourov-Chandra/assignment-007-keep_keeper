@@ -1,19 +1,26 @@
 "use client";
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 export const FriendsContext = createContext(null);
 
-const FriendsProvider = ({ initialFriends, children }) => {
-  const [friends, setFriends] = useState(initialFriends);
+const FriendsProvider = ({ children }) => {
+  const [friends, setFriends] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-  const data = {
-    friends,
-    setFriends,
-  };
+  useEffect(() => {
+    fetch("/api/friends")
+      .then((res) => res.json())
+      .then((data) => {
+        setFriends(data.friends);
+        setLoading(false);
+      });
+  }, []);
 
   return (
-    <FriendsContext.Provider value={data}>{children}</FriendsContext.Provider>
+    <FriendsContext.Provider value={{ friends, setFriends, loading }}>
+      {children}
+    </FriendsContext.Provider>
   );
 };
 
-export default FriendsProvider
+export default FriendsProvider;

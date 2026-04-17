@@ -1,9 +1,27 @@
 "use client";
 import useFriends from "@/app/hooks/useFriends";
 import FriendCard from "./FriendCard";
+import { GridLoader } from "react-spinners";
 
 const FriendsPage = () => {
-  const { friends } = useFriends();
+  const { friends, loading } = useFriends();
+
+  if (loading) {
+    return (
+      <section className="bg-gray-50 min-h-screen flex justify-center items-center">
+        <GridLoader
+          visible={true}
+          height="80"
+          width="80"
+          color="#244D3F"
+          ariaLabel="grid-loading"
+          radius="12.5"
+          wrapperStyle={{}}
+          wrapperClass="grid-wrapper"
+        />
+      </section>
+    );
+  }
 
   return (
     <section className="bg-gray-50">

@@ -4,11 +4,11 @@ import useTimeline from "@/app/hooks/useTimeline";
 import { LuMessageSquareText, LuTrash2 } from "react-icons/lu";
 import { PiArchive, PiBellSimpleZBold, PiVideoCameraBold } from "react-icons/pi";
 import { TbPhoneCall } from "react-icons/tb";
+import { toast } from "react-toastify";
 
 const FriendDetails = ({ id }) => {
   const { friends } = useFriends();
-  const { entries, addEntry } = useTimeline();
-  const friend = friends.find((f) => f.id === Number(id));
+  const { addEntry } = useTimeline();
 
   const formatDate = (dateString) => {
     const date = new Date(dateString);
@@ -30,6 +30,16 @@ const FriendDetails = ({ id }) => {
     "almost due": "Almost Due",
     overdue: "Overdue",
   };
+
+  const friend = friends.find((f) => f.id === Number(id));
+
+  if (!friend) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <p className="text-gray-400 text-xl">Friend not found.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-gray-50 px-6 flex items-center ">
@@ -126,7 +136,10 @@ const FriendDetails = ({ id }) => {
             </h3>
             <div className="grid grid-cols-3 gap-4">
               <button
-                onClick={() => addEntry(friend, "Call")}
+                onClick={() => {
+                  addEntry(friend, "Call");
+                  toast.success(`Call logged with ${friend.name}!`);
+                }}
                 className="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
               >
                 <TbPhoneCall className="w-6 h-6 text-gray-700" />
@@ -134,7 +147,10 @@ const FriendDetails = ({ id }) => {
               </button>
 
               <button
-                onClick={() => addEntry(friend, "Text")}
+                onClick={() => {
+                  addEntry(friend, "Text");
+                  toast.success(`Text logged with ${friend.name}!`);
+                }}
                 className="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
               >
                 <LuMessageSquareText className="w-6 h-6 text-gray-700" />
@@ -142,7 +158,10 @@ const FriendDetails = ({ id }) => {
               </button>
 
               <button
-                onClick={() => addEntry(friend, "Video")}
+                onClick={() => {
+                  addEntry(friend, "Video");
+                  toast.success(`Video logged with ${friend.name}!`);
+                }}
                 className="flex flex-col items-center gap-2 p-4 rounded-xl bg-gray-50 hover:bg-gray-100 transition-colors"
               >
                 <PiVideoCameraBold className="w-6 h-6 text-gray-700" />

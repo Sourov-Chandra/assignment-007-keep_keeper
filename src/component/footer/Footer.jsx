@@ -19,27 +19,29 @@ const Footer = () => {
           <div className="flex gap-3">
             <a
               href="#"
-              className="bg-black rounded-full p-3 hover:opacity-80 transition-opacity"
+              className="bg-white rounded-full p-3 hover:opacity-80 transition-opacity"
             >
-              <FaInstagram size={18} />
+              <FaInstagram size={18} className="text-black" />
             </a>
             <a
               href="#"
-              className="bg-black rounded-full p-3 hover:opacity-80 transition-opacity"
+              className="bg-white rounded-full p-3 hover:opacity-80 transition-opacity"
             >
-              <FaFacebook size={18} />
+              <FaFacebook size={18} className="text-black" />
             </a>
             <a
               href="#"
-              className="bg-black rounded-full p-3 hover:opacity-80 transition-opacity"
+              className="bg-white rounded-full p-3 hover:opacity-80 transition-opacity"
             >
-              <FaXTwitter size={18} />
+              <FaXTwitter size={18} className="text-black" />
             </a>
           </div>
         </div>
 
-        <div className="border-t border-white/10 px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm
-         text-gray-300">
+        <div
+          className="border-t border-white/10 px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm
+         text-gray-300"
+        >
           <p className="flex justify-center items-center gap-1.5">
             <LuCopyright /> 2026 KeenKeeper. All rights reserved.
           </p>
