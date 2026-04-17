@@ -38,7 +38,8 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-white/10 px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm text-gray-300">
+        <div className="border-t border-white/10 px-8 py-5 flex flex-col md:flex-row justify-between items-center gap-3 text-sm
+         text-gray-300">
           <p className="flex justify-center items-center gap-1.5">
             <LuCopyright /> 2026 KeenKeeper. All rights reserved.
           </p>

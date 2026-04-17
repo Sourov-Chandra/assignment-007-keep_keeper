@@ -3,6 +3,8 @@ import { GoHome } from "react-icons/go";
 import { MdOutlineTimeline } from "react-icons/md";
 import { TbChartLine } from "react-icons/tb";
 import Links from "./Links";
+/* import Image from "next/image";
+import logo from "../../assets/images/logo-xl.png" */
 
 const navLinks = [
   { href: "/", label: "Home", Icon: GoHome },
@@ -15,6 +17,13 @@ export default function Navbar() {
     <div className="border-gray-200  border-b bg-white ">
       <nav className="max-w-375 w-full mx-auto flex items-center justify-between px-4 py-3 sm:px-6">
         <div className="shrink-0">
+          {/* <Image
+            src={logo}
+            width={199}
+            height={50}
+            alt="keen keeper logo"
+            className="invert  dark:invert-0"
+          /> */}
           <span className="font-extrabold text-gray-900 text-xl tracking-tight sm:text-2xl">
             Keen
           </span>

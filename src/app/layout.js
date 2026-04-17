@@ -2,9 +2,9 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/navbar/Navbar";
 import { promises as fs } from "fs";
-import path from "path"; 
-import { FriendsProvider } from "@/context/friendsContext/FriendsContext";
+import path from "path";
 import Footer from "@/component/footer/Footer";
+import Providers from "./lib/providers/Providers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +24,11 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <FriendsProvider initialFriends={friends}>
+        <Providers friends={friends}>
           <Navbar />
           {children}
           <Footer />
-        </FriendsProvider>
+        </Providers>
       </body>
     </html>
   );

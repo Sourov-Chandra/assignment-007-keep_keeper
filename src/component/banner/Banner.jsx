@@ -17,7 +17,7 @@ const Banner = () => {
 
   return (
     <div className="bg-gray-50 py-12 text-center space-y-6">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800 px-2">
           Friends to keep close in your life
         </h1>
@@ -31,26 +31,26 @@ const Banner = () => {
             <span>
               <FaPlus />{" "}
             </span>
-            <span >Add a Friend</span>
+            <span>Add a Friend</span>
           </p>
         </button>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 px-4">
-          <div className="bg-white border border-gray-100 rounded-xl py-12 px-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6">
+          <div className="bg-white border border-gray-100 rounded-xl py-12">
             <p className="text-4xl font-semibold text-gray-800">{total}</p>
             <p className="text-lg text-gray-500 mt-2">Total Friends</p>
           </div>
-          <div className="bg-white border border-gray-100 rounded-xl py-12 px-4">
+          <div className="bg-white border border-gray-100 rounded-xl py-12">
             <p className="text-4xl font-semibold text-gray-800">{onTrack}</p>
             <p className="text-lg text-gray-500 mt-2">On Track</p>
           </div>
-          <div className="bg-white border border-gray-100 rounded-xl py-12 px-4">
+          <div className="bg-white border border-gray-100 rounded-xl py-12">
             <p className="text-4xl font-semibold text-gray-800">
               {needAttention}
             </p>
             <p className="text-lg text-gray-500 mt-2">Need Attention</p>
           </div>
-          <div className="bg-white border border-gray-100 rounded-xl py-12 px-4">
+          <div className="bg-white border border-gray-100 rounded-xl py-12">
             <p className="text-4xl font-semibold text-gray-800">
               {interactions}
             </p>
