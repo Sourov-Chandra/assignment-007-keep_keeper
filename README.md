@@ -1,38 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Keen Keeper
 
-## Getting Started
+> *Your personal shelf of meaningful connections. Browse, tend, and nurture the relationships that matter most.*
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Keen Keeper is a friendship relationship manager that helps you stay intentional about the people in your life. Set contact goals, log interactions, and never let an important relationship go cold again.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Technologies
 
-## Learn More
+| Layer | Tech |
+|-------|------|
+| Framework | Next.js (App Router) |
+| Language | JavaScript (JSX) |
+| Styling | Tailwind CSS |
+| Charts | Recharts |
+| Icons | React Icons |
+| Notifications | React Toastify |
+| State | React Context API |
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Friend Dashboard
+Browse all your friends at a glance with live status indicators — **On-Track**, **Almost Due**, or **Overdue** — so you always know who needs attention.
 
-## Deploy on Vercel
+### Quick Check-In Logging
+Log a **Call**, **Text**, or **Video** interaction with a single tap from any friend's detail page. Every entry is instantly reflected across the Timeline and Stats.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Friendship Analytics
+Visual breakdown of your interaction habits by type using an interactive donut chart — see exactly how you're staying in touch with the people who matter.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# assignment-007-keep_keeper" 
-"# assignment-007-keep_keeper" 
+---
+
